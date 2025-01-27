@@ -1,6 +1,6 @@
 ---
-title: SenseBERT: Driving Some Sense Into BERT
-published: 2025-01-26
+title: 'SenseBERT: Driving Some Sense Into BERT'
+published: 2025-01-24
 description: 'A short summary of SenseBERT: Driving Some Sense into BERT by Levine et al., 2020.'
 image: ''
 tags: [NLP, ML]

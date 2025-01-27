@@ -1,6 +1,6 @@
 ---
 title: Non-Projective Dependency Parsing using Spanning Tree Algorithms
-published: 2025-01-26
+published: 2025-01-22
 description: 'A short summary of the paper: Non-Projective Dependency Parsing using Spanning Tree Algorithms by McDonald et al., 2005'
 image: ''
 tags: [NLP, ML]

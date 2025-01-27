@@ -1,9 +1,8 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
 
-::github{repo="saicaca/fuwari"}
+Hi, I'm Raph. 
+I develop software to help [monitor greenhouse gas emissions](https://www.ghgsat.com/) when I'm not running around outside & climbing rocks.
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+I graduated from McGill University, where I studied mathematics and computer science. Since then, I've worked in business and technology consulting, been part of the [AI4Good Lab](https://www.ai4goodlab.com/), and volunteered for organisations like [Future Earth](https://futureearth.org/), [Sustainability in the Digital Age](https://sustainabilitydigitalage.org/), and [Earth Hero](https://www.earthhero.org/).
+
+I enjoy writing code and working on projects that support social impact and the mitigation of climate change.

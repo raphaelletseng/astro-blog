@@ -1,6 +1,6 @@
 ---
 title: Experimenting with Sentiment Analysis
-published: 2025-01-26
+published: 2025-01-23
 description: 'An exploration of sentiment analysis on movie review data.'
 image: ''
 tags: [NLP, ML]
