@@ -1,7 +1,7 @@
 ---
 title: "27 Places to Find Great Warm Drinks in Montreal"
 published: 2025-01-27
-description: 'A map of some of my favourite cafes in Montreal'
+description: 'A map of some of my favourite cafes in Montreal, inspired by Oliver Strand, Larry Buchanan, and Nilkanth Patel'
 image: './coffee2.png'
 tags: [maps]
 category: 'just for fun'
@@ -9,7 +9,7 @@ draft: false
 lang: ''
 ---
 
-I was inspired by [this map](https://www.nytimes.com/interactive/2014/05/06/dining/101-places-to-get-good-coffee-in-new-york.html?_r=0) by Larry Buchanan and Nilkanth Patel in The New York Times and wanted to create my own for Montreal. My selection of favourite cafes skews heavily towards Plateau establishments, so feel free to add to this map by appending an etnry to the `cafes.geojson` in [this repo](https://github.com/raphaelletseng/mtlcafes).
+I was inspired by [this map](https://www.nytimes.com/interactive/2014/05/06/dining/101-places-to-get-good-coffee-in-new-york.html?_r=0) by Oliver Strand, Larry Buchanan, and Nilkanth Patel in The New York Times and wanted to create my own for Montreal. My selection of favourite cafes skews heavily towards Plateau establishments, so feel free to add to this map by appending an etnry to the `cafes.geojson` in [this repo](https://github.com/raphaelletseng/mtlcafes).
 
 <iframe src="https://raphaelletseng.github.io/mtlcafes/" width="800px" height="600px">
 
