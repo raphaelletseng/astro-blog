@@ -4,7 +4,7 @@ published: 2025-01-26
 description: 'An exploration of sentiment analysis on movie review data.'
 image: ''
 tags: [NLP, ML]
-category: 'Learning'
+category: 'cs-learnings'
 draft: false 
 lang: 'en'
 ---

@@ -51,9 +51,9 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/demo-avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-  name: 'Lorem Ipsum',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  avatar: 'assets/images/flowers.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+  name: 'hi friend!',
+  bio: "I'm Raph, this is where I write things.",
   links: [
     // {
     //   name: 'Twitter',
@@ -62,11 +62,11 @@ export const profileConfig: ProfileConfig = {
     //                                     // `pnpm add @iconify-json/<icon-set-name>`
     //   url: 'https://twitter.com',
     // },
-    // {
-    //   name: 'Steam',
-    //   icon: 'fa6-brands:steam',
-    //   url: 'https://store.steampowered.com',
-    // },
+    {
+      name: 'LinkedIn',
+      icon: 'fa6-brands:linkedin',
+      url: 'https://www.linkedin.com/in/rapha%C3%ABlletseng/',
+    },
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
