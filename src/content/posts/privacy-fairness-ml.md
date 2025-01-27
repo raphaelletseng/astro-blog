@@ -25,5 +25,5 @@ Both privacy and fairness search to protect people from exploitation, and we sho
 
 
 
-<iframe src="../../src/assets/pdfs/privacy_fairness_Report.pdf" width = "100%" height = "750px"> </iframe>
+<iframe src="/astro-blog/src/assets/pdfs/privacy_fairness_Report.pdf" width = "100%" height = "750px"> </iframe>
 
