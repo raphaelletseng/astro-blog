@@ -1,12 +1,12 @@
 ---
 title: Experimenting with Sentiment Analysis
 published: 2025-01-23
-description: 'An exploration of sentiment analysis on movie review data.'
-image: ''
+description: "An exploration of sentiment analysis on movie review data."
+image: ""
 tags: [NLP, ML]
-category: 'cs-learnings'
-draft: false 
-lang: 'en'
+category: "cs-learnings"
+draft: false
+lang: "en"
 ---
 
 Sentiment Analysis is a subset of Natural Language Processing (NLP), a branch of AI that
@@ -50,6 +50,7 @@ def remove_stopwords(text):
     words_without_stopwords = " ".join([w for w in words if w not in stopwords.words('english')])
     return words_without_stopwords
 ```
+
 When preprocessing text data, often we can choose between stemming or lemmatizing the data.
 Stemming is a more aggressive than lemmatizing. It involves entirely cutting off the affix of
 a word to find the stem. The most common method for this is the Porter Stemmer method.
@@ -59,6 +60,7 @@ dictionary). It leaves us with words that still exist, where stemming might give
 I choose to go with lemmatizing for this exercise because time is not of any concert.
 Lemmatizing can be slower than stemming. Also, since stemming is so aggressive, I worry
 that meaning might be lost and I don't want to run that risk.
+
 ```
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
@@ -66,8 +68,10 @@ def word_lemmatizer(text):
     lem_text= "".join([lemmatizer.lemmatize(i) for i in text])
     return lem_text
 ```
+
 These three functions work on a single sentence. In order to apply them to an array of
 sentences I will write two more simple functions:
+
 ```
 def preprocess(sentence):
     t = remove_punctuation(sentence)
@@ -83,6 +87,7 @@ def preprocess_array(text_array):
 ```
 
 ## Dealing with Data
+
 Now, we can turn our attention to our actual datasets - the movie reviews. I am going to
 read the positive and negative data into two different arrays using numpy.
 Every sentence (or every text snippet) is handily separated by a newline, and fills a new
@@ -101,14 +106,18 @@ new array of equal length to each of the datasets, and initialise every entry wi
 1 for the positive snippets, and a 0 for the negative snippets.
 
 Then we can join our two arrays together as follows:
+
 ```
 text_data = np.concatenate((raw_pos, raw_neg))
 sentiment_data = np.concatenate((pos_np , neg_np))
 ```
+
 We can run the earlier preprocess functions on our text_data array:
+
 ```
 preprocess_array(text_data)
 ```
+
 And now we should have a cleaned array of text entries and a corresponding array of 1s and
 0s denoting positive or negative sentiments.
 
@@ -140,16 +149,21 @@ def vectorize(text):
 There are plenty of different ways you can vectorize your data. In this case, my features
 are simply going to be unigram counts - words in isolation.
 I apply the above function to my text_data of sentences:
+
 ```
 X = vectorize(text_data)
 X = X.toarray()
 ```
+
 And for convenience, I am also going to rename my 'sentiment_data' of 1s and 0s
 corresponding to positive or negative snippets 'y':
+
 ```
 y = sentiment_data
 ```
+
 ### Training and Testing Data
+
 So now we have X and y, which we can feed into a model. However, if we want to evaluate
 our model after training, we need to have unseen data it hasn't been exposed to that we
 can test it on.
@@ -158,13 +172,15 @@ Usually, training data makes up 60-90% of the total data, and testing data about
 10-20%. For this exercise, I am going to split things 80 : 20.
 (Sometimes, a third set known as a validation set can also be useful to decide between
 different versions of a model.)
+
 ```
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, train_size = 0.8, shuffle = True)
 ```
+
 I also make sure to shuffle the data as currently, the positive and negative data is simply
 stacked one on top of the other. (This can also be done with two arrays using c = list(zip(X,y)) ,
-random.shuffle(c) , X, y = zip(*c) )
+random.shuffle(c) , X, y = zip(\*c) )
 
 Cool! We're just about ready to run some models.
 
@@ -175,6 +191,7 @@ part. You can change the model parameters and there are other ways to optimise t
 parameters, but for now I'm just going to use the default settings.
 
 ### Logistic Regression
+
 ```
 from sklearn.linear_model import LogisticRegression
 clf1 = LogisticRegression(random_state = 0, solver = 'lbfgs').fit(X_train, y_train)
@@ -183,10 +200,12 @@ clf1_pred = clf1.predict(X_test)
 acc_score1 = metrics.accuracy_score(y_test, clf1_pred)
 print('Accuracy Classification Score LR: {}'.format(acc_score1))
 ```
+
 Once the model is trained on the training set data, the test sets are used to predict
 and test the accuracy of the model. I compared the accuracy over three different models.
 
 Naive Bayes performed better than linear regression and support vector machines.
+
 ```
 Accuracy Classification Score Linear Regression: 0.7613689639006095
 Accuracy Classification Score SVM: 0.7524613220815752
@@ -196,6 +215,7 @@ Accuracy Classification Score Naïve Bayes: 0.7641819034224098
 Finally, just to note, running your code on the full dataset whenever changes are made
 to it can be long and tedious, especially when debugging. It can be useful to just load
 the first part of the dataset and work with that.
+
 ```
 raw_pos = np.loadtxt(f, delimiter="\n", dtype = np.str)[:100]
 ```

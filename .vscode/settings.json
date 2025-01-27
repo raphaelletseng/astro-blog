@@ -18,5 +18,12 @@
     "quickfix.biome": "always",
     "source.organizeImports.biome": "always"
   },
-  "frontMatter.dashboard.openOnStart": false
+  "frontMatter.dashboard.openOnStart": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro", // Enable .astro
+    "typescript", // Enable .ts
+    "typescriptreact" // Enable .tsx
+  ]
 }

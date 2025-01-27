@@ -1,12 +1,12 @@
 ---
-title: 'The Importance of Privacy and Fairness in Machine Learning'
+title: "The Importance of Privacy and Fairness in Machine Learning"
 published: 2025-01-26
-description: 'Investigating the impact of unfairness mitigation techniques on privacy preserving Machine Learning.'
-image: ''
+description: "Investigating the impact of unfairness mitigation techniques on privacy preserving Machine Learning."
+image: ""
 tags: [ML]
-category: 'cs-learnings'
-draft: false 
-lang: 'en'
+category: "cs-learnings"
+draft: false
+lang: "en"
 ---
 
 As our reliance on data and machine learning decision systems continues to increase, we have a responsibility to ensure that the models we train guarantee individual privacy and do not exacerbate existing social disparities and unfair judgements. Privacy and fairness have been discussed more and more as the topic of ethics in artificial intelligence (AI) has gained prominence, however they are oven covered as distinct topics. Both privacy and fairness strive to protect the rights of users and subjects of software systems, and more often than not, work in tandem with each other. Privacy may be defined as 'The condition of not having undocumented personal knowledge about one possessed by others' Dwork and Roth (2014). Fairness has always been a more complicated notion to define, especially in the realm of computer science. Fairness, with regards to the law, is ’seeking to treat people justly on an individual basis with regards to the use of information regarding them’. Algorithmic fairness stipulates that ’A person’s experience with an information system should not irrelevantly depend on their personal characteristics’ Ekstrand et al. (2018). We measure an AI system’s fairness based on its impact on people and the harm it may cause. Allocation harms occur when a system makes decisions, for example, to assign loans. A quality of service harm occurs when a system works differently for one group of people vs another.
@@ -19,11 +19,8 @@ Both privacy and fairness search to protect people from exploitation, and we sho
 
 ::github{repo="raphaelletseng/fairlearn-pytorch"}
 
-*19th Nov 2021* - Edited note: I used the terms 'unfairness mitigation' and 'bias mitigation' interchangably in this report. I think the correct term should be 'unfairness mitigation'. In the paper [The Myth of Complete AI-Fairness](https://arxiv.org/pdf/2104.12544.pdf), Virginia Dignum makes the point that not all bias is bad, and bias in human data is impossible to fully eliminate. **"Bias is not the problem,"** they write, **"prejudice and discrimination are."**
+_19th Nov 2021_ - Edited note: I used the terms 'unfairness mitigation' and 'bias mitigation' interchangably in this report. I think the correct term should be 'unfairness mitigation'. In the paper [The Myth of Complete AI-Fairness](https://arxiv.org/pdf/2104.12544.pdf), Virginia Dignum makes the point that not all bias is bad, and bias in human data is impossible to fully eliminate. **"Bias is not the problem,"** they write, **"prejudice and discrimination are."**
 
 > "Whereas prejudice represents a preconceived judgment or attitude, discrimination is a behaviour. In society, discrimination is often enacted through institutional structures and policies, and embedded in cultural beliefs and representations, and is thus reflected in any data collected. The focus need be on using AI to support interventions aimed at reducing prejudice and discrimination, e.g. through education, facilitation of intergroup contact, targeting social norms promoting positive relations between groups, or supporting people identify their own bias and prejudices."
 
-
-
 <iframe src="/astro-blog/assets/pdfs/privacy_fairness_Report.pdf" width = "100%" height = "750px"> </iframe>
-

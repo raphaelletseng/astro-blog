@@ -1,13 +1,14 @@
 ---
-title: 'Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data'
+title: "Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data"
 published: 2025-01-12
 description: "A short summary of Bender and Koller's Climbing Towards NLU: On Meaning, Form, and Understanding in the Age of Data., 2020."
-image: ''
+image: ""
 tags: [NLP, ML]
-category: 'cs-learnings'
-draft: false 
-lang: 'en'
+category: "cs-learnings"
+draft: false
+lang: "en"
 ---
+
 This is a short summary of [Bender and Koller's 'Climbing Towards NLU: On Meaning, Form, and
 Understanding in the Age of Data'., 2020](https://www.aclweb.org/anthology/2020.acl-main.463/).
 
