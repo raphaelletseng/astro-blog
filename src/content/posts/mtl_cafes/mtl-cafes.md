@@ -75,4 +75,4 @@ Clicking the point will redirect you to the cafe's website. The UI could be impr
 <img src="/src/content/posts/mtl_cafes/nyt_popup.png" alt="nyt-popup-example" width="200px"> 
 Something to add down the line. I also started implementing an additional layer for some food locations (see `food.geojson`) before deciding to stay true to the original goal of recreating a coffee map of Montreal. Although, whilst I love a cafe and a warm drink served in a mug (matcha, chai, london fogs, hot chocolate etc.), I am only an occasional coffee drinker, so I have ultimately titled this **"27 Places to Find Great Warm Drinks in Montreal"**. 
 
-<img src="/src/content/posts/mtl_cafes/drinks-footer-banner.png" alt="illustations of drinks" width="100%">
+<img src="./drinks-footer-banner.png" alt="illustations of drinks" width="100%">
