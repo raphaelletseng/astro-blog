@@ -70,9 +70,9 @@ The address and website are included in the data to allow users to get more data
 ### Future Improvements
 
 Currently, hovering over a point will cause it to change colour from purple to orange. The following popup will appear: 
-<img src="/public/assets/images/popup.png" alt="popup-example" width="200px">
+<img src="/assets/images/popup.png" alt="popup-example" width="200px">
 Clicking the point will redirect you to the cafe's website. The UI could be improved here because the user doesn't get great feedback to indicate that a new tab will be opened. And whilst the map does say 'Click.. to visit their website' the actual space for the user to interact with each cafe is only the area of the point. In the NYT map, the popup stays open if you are hovering over its area and not just the pin point:
-<img src="/public/assets/images/nyt_popup.png" alt="nyt-popup-example" width="200px"> 
+<img src="/assets/images/nyt_popup.png" alt="nyt-popup-example" width="200px"> 
 Something to add down the line. I also started implementing an additional layer for some food locations (see `food.geojson`) before deciding to stay true to the original goal of recreating a coffee map of Montreal. Although, whilst I love a cafe and a warm drink served in a mug (matcha, chai, london fogs, hot chocolate etc.), I am only an occasional coffee drinker, so I have ultimately titled this **"27 Places to Find Great Warm Drinks in Montreal"**. 
 
-<img src="/public/assets/images/drinks-footer-banner.png" alt="illustations of drinks" width="100%">
+<img src="/assets/images/drinks-footer-banner.png" alt="illustations of drinks" width="100%">
