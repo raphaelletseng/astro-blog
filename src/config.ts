@@ -7,8 +7,8 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-  title: "Raph TZR",
-  subtitle: "bloggy blogs",
+  title: "raphaelle tsengzr",
+  subtitle: "Raphaelle Tseng's bloggy blog",
   lang: "en", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
   themeColor: {
     hue: 275, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -82,7 +82,7 @@ export const profileConfig: ProfileConfig = {
 };
 
 export const licenseConfig: LicenseConfig = {
-  enable: true,
+  enable: false,
   name: "CC BY-NC-SA 4.0",
   url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
 };
