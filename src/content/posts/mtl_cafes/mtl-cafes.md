@@ -13,6 +13,8 @@ I was inspired by [this map](https://www.nytimes.com/interactive/2014/05/06/dini
 
 <iframe src="https://raphaelletseng.github.io/mtlcafes/" width="800px" height="600px">
 
+### 
+
 [Mapbox](https://www.mapbox.com) is a great tool for building maps. The fig above is a simple, basic `index.html` page hosted on github pages. To have access to the mapbox api, you need the following code in your `<head>` tag:
 
 ```
@@ -21,7 +23,7 @@ I was inspired by [this map](https://www.nytimes.com/interactive/2014/05/06/dini
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
 ```
 
-and then a `<div id="map"></div>` in the `<body>`. 
+And then a `<div id="map"></div>` in the `<body>`. 
 
 Within the `<script>` you will need to add your personal mapbox token (which you can generate for free on their website). You can initialise your map with:
 ```
